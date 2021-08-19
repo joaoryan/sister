@@ -15,8 +15,18 @@ export const Paragrafo = styled.p`
 font-size: 80px;
 `;
 
-export const Container = styled.section`
-max-width: 360px;
-background: #fff;
-margin: 30px auto;
+export const Apresent = styled.section`
+background: white;
+height: 500px;
+padding: 64px;
+div{
+    width: 50%;
+}
+`;
+
+export const Video = styled.section`
+background: blue;
+height: 500px;
+padding: 64px;
+
 `;

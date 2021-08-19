@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 
 import { Container } from '../../styles/GlobalStyles';
-import {Title, Paragrafo } from './styled';
+import {Title, Paragrafo,Apresent,Video} from './styled';
 import * as exampleActions from '../../store/modules/example/actions'
 
 
@@ -18,6 +18,8 @@ const dispatch = useDispatch();
 
     return (
         <Container>
+            <Apresent>
+            <div>
             <Title isRed>
                 Login 42
                 <small> Olá terraqueos </small>
@@ -26,7 +28,21 @@ const dispatch = useDispatch();
             <Paragrafo>pao de queijo</Paragrafo>
 
             <button type="button" onClick={handleClick}>Enviar</button>
+            </div>
+            </Apresent>
+          
+          <Video>
+            
+            <>Video</>
+
+          </Video>
+
+
+
+
+
         </Container>
+        
     );
 
 }
