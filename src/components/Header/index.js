@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import { Nav } from './styeled';
-
+import { Container } from '../../styles/GlobalStyles';
 export default function Header() {
-    const botaoClicado = useSelector(state => state.example.botaoClicado);
 
     return (
+        <Container>
         <Nav>
+           
+            <div>
             <Link to="/">
                 < FaHome size={24} />
             </Link>
@@ -19,8 +21,10 @@ export default function Header() {
             <Link to="/42">
                 <FaSignInAlt size={24} />
             </Link>
-            {botaoClicado ? 'Clicado' : 'Não clicado'}
+            </div>
+            
         </Nav>
+        </Container>
     );
 
 }

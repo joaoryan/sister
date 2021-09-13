@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
 *{
+
     margin: 0;
     padding: 0;
     outline: none;
@@ -13,10 +14,13 @@ body{
 font-family: sans-serif;
 background: ${color.primaryDarkColor};
 color: ${color.primaryDarkColor};
+
 }
 
 html, border, #root {
     height: 100%;
+   
+
 }
 
 button{
@@ -28,25 +32,14 @@ button{
     border-radius: 4px;
     font-weight: 700;
 }
-a{
-    text-decoration: none;
-    color: ${color.primaryColor};
-}
-ul{
-    list-style: none;
-}
-
-body .Toastify .Toastify_toast-container .Toastify_toast--success {
-background: ${color.successColor}
-}
-body .Toastify .Toastify_toast-container .Toastify_toast--error {
-background: ${color.errorColor}
-}
 
 `;
 
-export const Container = styled.section`
-max-width: 100%;
-background: white;
+export const Container = styled.body`
+width: 100%;
+height: 100%;
+min-height: 100%;
+background: blue;
+font-family: 'Courier New', Courier, monospace;
 
 `;
