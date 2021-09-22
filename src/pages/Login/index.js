@@ -23,7 +23,7 @@ export default function Login() {
         </div>
          <div>
         <img align="right" alt="Joao-yoda" height="350px" width="350px" src="https://media.giphy.com/media/xUOxfg0ESyhKOv4Vva/giphy.gif"/>
-          </div>
+        </div>
   
 
       </Apresent>
